@@ -1,0 +1,8 @@
+include ':video', ':other_tencentl_uploadlibrary',
+        ':other_tencentlibrary',
+        ':ui_mvplibrary',
+        ':other_playerlibrary',
+        ':net_okhttp3library',
+        ':other_toolslibrary',
+        ':other_sel_picturelibrary'
+

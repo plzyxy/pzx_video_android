@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f35343d"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_radius_ffffff_5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:background="@drawable/icon_notice_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/icon_notice_laba" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:includeFontPadding="false"
+                        android:text="香蕉视频公告"
+                        android:textColor="#ffb6b6df"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:includeFontPadding="false"
+                        android:text="N   O   T   I   C   E"
+                        android:textColor="#B6B6DF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="113dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="【公告】"
+                    android:textColor="#ff333333"
+                    android:textSize="18sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scrollbars="none"
+                    android:fillViewport="true">
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="性感妖娆，性感妖娆可爱逗比，就在香蕉视频就在香蕉视频就在香蕉视频就在香蕉视频就在香蕉视频就在香蕉视频就在香蕉视频"
+                        android:textColor="#ff333333"
+                        android:textSize="15sp" />
+                </ScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_below="@+id/root"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/icon_radius_d76dbb_40"
+            android:gravity="center"
+            android:text="我知道了"
+            android:textColor="#fffefefe"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

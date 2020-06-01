@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api rootProject.ext.dependencies.appcompatV7
+    api rootProject.ext.dependencies.recyclerviewV7
+    api rootProject.ext.dependencies.SmartRefreshLayout
+    api rootProject.ext.dependencies.fresco
+    implementation rootProject.ext.dependencies.fresco_gif
+    api rootProject.ext.dependencies.basePopup
+}

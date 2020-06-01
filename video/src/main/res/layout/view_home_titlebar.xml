@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:background="@mipmap/ic_launcher" />
+    <TextView
+        android:id="@+id/iconView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#ff333333"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/searchButton"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="44dp"
+        android:layout_weight="1"
+        android:background="@drawable/icon_radius_f2f2f2_40"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/icon_home_search"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="@string/请输入电影名"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

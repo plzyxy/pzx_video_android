@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="418dp"
+        android:background="@drawable/img_login_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="395dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginRight="41dp"
+        android:background="@drawable/icon_radius_ffffff_15"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/ic_launcher" />
+
+        <com.thinksoft.banana.ui.view.InputView
+            android:id="@+id/phoneInputView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="26dp" />
+
+        <com.thinksoft.banana.ui.view.InputView
+            android:id="@+id/passInputView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="26dp" />
+
+        <TextView
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/icon_radius_d76dbb_40"
+            android:gravity="center"
+            android:text="@string/登录"
+            android:textColor="#FEFEFE"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="@string/立即注册"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/modifyPassButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="@string/忘记密码"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/confirmButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/confirmIconView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_sel_flase"
+                    android:drawablePadding="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/已阅读并同意"
+                    android:textColor="#808080"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/xyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/用户协议"
+                    android:textColor="#d76dbb"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

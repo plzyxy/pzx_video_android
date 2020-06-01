@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+/**
+ * 点播
+ * */
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.videoplay.versionCode
+        versionName rootProject.ext.videoplay.versionName
+        applicationId rootProject.ext.videoplay.applicationId
+        multiDexEnabled true
+        ndk {
+            abiFilters  "armeabi-v7a"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        debug {
+            keyAlias 'key0'
+            keyPassword '123456789'
+            storeFile file('doc/jks/tang.jks')
+            storePassword '123456789'
+            v2SigningEnabled false
+        }
+        release {
+            keyAlias 'key0'
+            keyPassword '123456789'
+            storeFile file('doc/jks/tang.jks')
+            storePassword '123456789'
+            v2SigningEnabled false
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.dependencies.appcompatV7
+    implementation rootProject.ext.dependencies.design
+    implementation rootProject.ext.dependencies.flycoTabLayout_Lib
+    implementation rootProject.ext.dependencies.eventbus
+    implementation rootProject.ext.dependencies.bugly
+    implementation rootProject.ext.dependencies.rxjava
+    implementation rootProject.ext.dependencies.rxandroid
+    //友盟统计
+    implementation 'com.umeng.umsdk:analytics:7.5.4'
+    implementation 'com.umeng.umsdk:common:1.5.4'
+
+    //垂直滚动ViewPager
+    implementation 'me.kaelaela:verticalviewpager:1.0.0@aar'
+    //垂直滚动ViewPager
+    implementation 'com.gcssloop.recyclerview:pagerlayoutmanager:2.3.7'
+    //富文本textView
+    api 'com.github.limedroid:XRichText:v1.0.0'
+
+    //腾讯云播放器
+    implementation(name: 'LiteAVSDK_Professional', ext: 'aar')
+    implementation(name: 'lib_tcsuperplayer', ext: 'aar')
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.5.3'
+
+    implementation project(':ui_mvplibrary')
+    implementation project(':net_okhttp3library')
+    implementation project(':other_toolslibrary')
+    implementation project(':other_playerlibrary')
+    implementation project(':other_sel_picturelibrary')
+    implementation project(':other_tencentlibrary')
+    implementation project(':other_tencentl_uploadlibrary')
+}

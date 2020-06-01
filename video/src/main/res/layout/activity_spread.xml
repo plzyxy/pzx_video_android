@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d3d3d3" />
+
+    <ImageView
+        android:id="@+id/bgImgeView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/icon_radius_323232_100" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/backButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iconView"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/icon_spread_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/titleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/推广"
+                android:textColor="#D8AD9B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rightTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="@string/我的推广"
+                android:textColor="#D8AD9B"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.txf.ui_mvplibrary.ui.view.RefreshLayout
+            android:id="@+id/RefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="70dp"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               />
+        </com.txf.ui_mvplibrary.ui.view.RefreshLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/spreadButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="43dp"
+                android:layout_marginRight="43dp"
+                android:background="@drawable/icon_rect_d8ad9b_20"
+                android:gravity="center"
+                android:text="立即推广"
+                android:textColor="#ffd8ad9b"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_alignParentBottom="true"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/spreadButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:background="@drawable/icon_rect_d8ad9b_20"
+        android:gravity="center"
+        android:text="立即推广"
+        android:textColor="#ffd8ad9b"
+        android:textSize="18sp" />
+
+</RelativeLayout>

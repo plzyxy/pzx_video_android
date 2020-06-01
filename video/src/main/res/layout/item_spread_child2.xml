@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="14dp"
+        android:background="#D5BC96" />
+
+    <LinearLayout
+        android:translationZ="3dp"
+        android:layout_marginBottom="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/icon_radius_ffffff_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:background="@drawable/icon_radius_fde4db_10_top"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="1.用户名注册"
+            android:textColor="#ffd8ad9b"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="手机号注册，每日观影次数 +2 （*为防止APP丢失您的推广信息。可通过注册账号绑定推广人数，强烈建议注册*）"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

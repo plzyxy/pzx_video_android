@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginRight="68dp"
+        android:background="@drawable/icon_radius_d76dbb_40"
+        android:gravity="center"
+        android:text="确定支付"
+        android:textColor="#fffefefe"
+        android:textSize="15sp" />
+</LinearLayout>

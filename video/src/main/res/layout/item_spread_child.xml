@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="6dp">
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/icon_radius_fde4db_5">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/level_img"
+            android:layout_width="19dp"
+            android:layout_height="21dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_spread_level_1" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="11dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/level_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="入门徽章"
+            android:textColor="#ff837349"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/level_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:includeFontPadding="false"
+            android:text="推广1人-每日观影次数+2，缓存次数+1"
+            android:textColor="#ff999999"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>

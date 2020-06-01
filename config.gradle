@@ -1,0 +1,55 @@
+ext {
+    supportVersion = "26.1.0"
+    android = [
+            compileSdkVersion: 26,
+            minSdkVersion    : 19,
+            targetSdkVersion : 26,
+    ]
+
+    //2.0
+//    videoplay = [
+//            versionCode  : 1,
+//            versionName  : "1.0.0",
+//            applicationId: "com.thinksoft.banana",//包名
+//    ]
+    //凹凸社区
+    videoplay = [
+            versionCode  : 26,
+            versionName  : "2.0.5",
+            applicationId: "com.thinksoft.video3",//包名
+    ]
+
+    dependencies = [
+            design                : "com.android.support:design:$supportVersion",
+            percent               : "com.android.support:percent:$supportVersion",
+            appcompatV7           : "com.android.support:appcompat-v7:$supportVersion",
+            recyclerviewV7        : "com.android.support:recyclerview-v7:$supportVersion",
+
+            eventbus              : 'org.greenrobot:eventbus:3.1.1',
+            gson                  : 'com.google.code.gson:gson:2.6.2',
+            bugly                 : 'com.tencent.bugly:crashreport:latest.release',
+            logger                : 'com.orhanobut:logger:2.2.0',
+
+            //OKHttp3.0依赖
+            okhttp                : 'com.squareup.okhttp3:okhttp:3.9.0',
+            //OKHttp优化策略依赖
+            interceptor           : 'com.squareup.okhttp3:logging-interceptor:3.9.0',
+            //rxJava页面支持(生命周期同步)
+            rxlifecycle_components: 'com.trello.rxlifecycle2:rxlifecycle-components:2.0.1',
+
+            rxjava                : 'io.reactivex:rxjava:1.0.14',
+            rxandroid             : 'io.reactivex:rxandroid:1.0.1',
+            //图片处理
+            fresco                : 'com.facebook.fresco:fresco:1.12.1',
+            fresco_gif            : 'com.facebook.fresco:animated-gif:1.12.1',
+
+            //窗口
+            basePopup             : 'com.github.razerdp:BasePopup:2.1.8',
+            //下拉刷新上拉加载
+            SmartRefreshLayout    : 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-20',
+            //刷新框架特殊头部
+            SmartRefreshHeader    : 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-7',
+            //tab选择器ViewPager
+            flycoTabLayout_Lib    : 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    ]
+}

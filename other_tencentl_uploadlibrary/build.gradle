@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+/**
+ * https://cloud.tencent.com/document/product/266/9539
+ * 腾讯云点播视频上传
+ * */
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.dependencies.okhttp
+    implementation 'com.parse.bolts:bolts-tasks:1.4.0'
+    implementation 'com.squareup.okio:okio:1.13.0'
+}

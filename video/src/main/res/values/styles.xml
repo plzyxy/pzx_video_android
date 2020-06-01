@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<item name="android:windowAnimationStyle">@style/activityAnimation</item>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AnimAppTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/activityTranslationin</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--继承自AppTheme 不要标题栏,带窗口背景并且全屏的主题-->
+    <style name="StartTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/img_start_bg</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/activityScaleAlpha</item>
+    </style>
+    <style name="ScaleAlphaTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/activityScaleAlpha</item>
+    </style>
+
+    <!--Activity跳转动画 滑动-->
+    <style name="activityTranslationin">
+        <item name="android:activityOpenEnterAnimation">@anim/libs_activity_translation_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/libs_activity_translation_out</item>
+    </style>
+    <!--Activity跳转动画 缩放+透明度变化-->
+    <style name="activityScaleAlpha">
+        <item name="android:activityOpenEnterAnimation">@anim/libs_activity_scale_alpha_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/libs_activity_scale_alpha_out</item>
+    </style>
+    <!--Activity跳转动画 缩放-->
+    <style name="activityScale">
+        <item name="android:activityOpenEnterAnimation">@anim/libs_activity_scale_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/libs_activity_scale_out</item>
+
+        <item name="android:activityCloseEnterAnimation">@anim/libs_activity_scale_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/libs_activity_scale_out</item>
+    </style>
+
+
+</resources>
